@@ -19,6 +19,10 @@ class HotelService {
 		});
 	}
 
+	async getById(hotelId) {
+		return this.Hotel.findOne({ where: {id: hotelId} });
+	}
+
 	async getHotelDetails(hotelId) {
 		const hotel = await this.Hotel.findOne({
 			where: {

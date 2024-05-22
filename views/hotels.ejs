@@ -17,9 +17,9 @@
               <%=hotel.Location%>
             </span>
         </span>
-        <a href="/rooms/<%=hotel.id%>" class="col btn btn-secondary"> Rent a room</a>
-        <a href="/hotels/<%=hotel.id%>" class="col btn btn-secondary"> Details</a>
-        <button class="col-2 btn btn-secondary" onclick="deleteHotel(<%=hotel.id%>)"> Delete</button>
+        <a href="/rooms/<%=hotel.id%>" class="col btn btn-secondary" name="rent">Rent a room</a>
+        <a href="/hotels/<%=hotel.id%>" class="col btn btn-secondary">Details</a>
+        <button class="col-2 btn btn-secondary" onclick="deleteHotel(<%=hotel.id%>)">Delete</button>
       </div>
       <% }); %>
   </div>
